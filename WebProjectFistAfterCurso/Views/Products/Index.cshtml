@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebProjectFistAfterCurso.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Tabela de Produtos</h1>
+
+<p>
+    <a asp-action="Create">Criar um novo produto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NmProduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NtProduto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NmProduto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NtProduto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProduto">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProduto">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProduto">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
