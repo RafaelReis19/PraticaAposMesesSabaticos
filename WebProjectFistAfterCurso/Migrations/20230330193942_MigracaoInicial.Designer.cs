@@ -11,8 +11,8 @@ using WebProjectFistAfterCurso.Models;
 namespace WebProjectFistAfterCurso.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220814215920_Inicial-criacao")]
-    partial class Inicialcriacao
+    [Migration("20230330193942_MigracaoInicial")]
+    partial class MigracaoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

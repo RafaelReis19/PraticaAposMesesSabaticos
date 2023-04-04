@@ -6,7 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<Context>(options => options.UseSqlServer("workstation id=BD-DB-Rafael.mssql.somee.com;packet size=4096;user id=RafaeldosReis19_SQLLogin_1;pwd=pm6e3di2e5;data source=BD-DB-Rafael.mssql.somee.com;persist security info=False;initial catalog=BD-DB-Rafael"));
+builder.Services.AddDbContext<Context>(options => options.UseSqlServer("YourDBConnectionString"));
+//User Id=SYSTEM;Password=Rafael2005;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST =localhost)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=XE)))
 
 var app = builder.Build();
 

@@ -4,7 +4,7 @@
 
 namespace WebProjectFistAfterCurso.Migrations
 {
-    public partial class Inicialcriacao : Migration
+    public partial class MigracaoInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -11,5 +11,7 @@ namespace WebProjectFistAfterCurso.Models
 
         public DbSet<Product> Product { get; set; }
 
+        
+
     }
 }
